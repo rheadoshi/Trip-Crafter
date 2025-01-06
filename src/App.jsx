@@ -1,8 +1,12 @@
-import { useState } from 'react'
 import './App.css'
 import { Button } from './components/ui/button'
+import CreateTrip from './components/create-trip'
+import { useNavigate } from 'react-router'
 
 function App() {
+
+  const navigate = useNavigate()
+  
 
   return (
     <>
@@ -17,7 +21,7 @@ function App() {
           tailored to your budget and interests
         </h3>
         <br/>
-        <Button className="bg-black text-white self-center font-semibold rounded-xl">Get Started</Button>
+        <Button className="bg-black text-white self-center font-semibold rounded-xl" onClick={()=>{navigate('/create-trip')}}>Get Started</Button>
       </div>
     </>
   )

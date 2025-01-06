@@ -6,6 +6,7 @@ import App from './App.jsx'
 import Error from './components/Error'
 import Header from './components/custom/Header'
 import CreateTrip from './components/create-trip'
+import ViewTrip from './components/view-trip/[tripId]'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import path from 'path'
 import { element } from 'prop-types'
@@ -20,6 +21,11 @@ const appRouter = createBrowserRouter([
     path:'/create-trip',
     element: <CreateTrip/>,
     error: <Error/>
+  },
+  {
+    path:'/view-trip/:tripId',
+    element: <ViewTrip/>,
+    errorElement: <Error/>
   },
 ])
 
