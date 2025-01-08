@@ -1,4 +1,5 @@
 import React from "react";
+import PlaceImage from "./PlaceImage";
 
 const Itenary = (trip) => {
   const tripData = trip?.trip?.tripData ? JSON.parse(trip.trip.tripData) : null;
@@ -16,11 +17,8 @@ const Itenary = (trip) => {
                 <h3 className="text-xl font-semibold text-red-400">{placeItem.placeName}</h3>
                 <p className="text-gray-700">{placeItem.placeDetails}</p>
 
-                <img
-                  src={placeItem.placeImageURL}
-                  alt={placeItem.placeName}
-                  className="w-full h-48 object-cover mt-4 rounded-md"
-                />
+                <PlaceImage placeItem ={placeItem}/>
+                
 
                 <div className="mt-4">
                   <p className="text-gray-800">
