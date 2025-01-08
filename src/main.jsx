@@ -11,6 +11,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google'
 import path from 'path'
 import { element } from 'prop-types'
 import Footer from './components/custom/Footer'
+import MyTrips from './components/my-trips'
 
 const appRouter = createBrowserRouter([
   {
@@ -28,14 +29,23 @@ const appRouter = createBrowserRouter([
     element: <ViewTrip/>,
     errorElement: <Error/>
   },
+  {
+    path:'/my-trips',
+    element: <MyTrips/>,
+    errorElement: <Error/>
+  }
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_AUTH_CLIENT_ID}>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <RouterProvider router={appRouter}/>
+      <div className="flex-grow">
+        <RouterProvider router={appRouter} />
+      </div>
       <Footer/>
+    </div>
     </GoogleOAuthProvider>
   </StrictMode>,
 )
