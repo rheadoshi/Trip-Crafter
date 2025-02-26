@@ -1,8 +1,26 @@
-# React + Vite
+# Trip-Crafter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Trip Crafter is an AI-powered trip planning application that helps users create personalized travel itineraries based on their preferences. It leverages machine learning, natural language processing, and real-time data to optimize travel experiences.
 
-Currently, two official plugins are available:
+## Features
+- Personalized Itineraries: Generates customized travel plans based on user interests, budget, and duration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- AI-based Recommendations: Suggests accommodations and activities using AI-driven insights.
+
+- Interactive Map: Displays destinations with Google Maps.
+
+- User Profiles: Allows users to save trips and preferences.
+
+
+### Tech Stack
+ - Fontend: React, Javascript, TailwindCSS
+ - Backend database: Firebase
+ - AI: Gemini API 
+ - Hosting: Vercel
+
+
+### Contact
+
+For inquiries or suggestions, contact: @rheadoshi
+
