@@ -12,6 +12,9 @@ Trip Crafter is an AI-powered trip planning application that helps users create 
 
 - User Profiles: Allows users to save trips and preferences.
 
+### Live Demo
+![Live Demo](https://github.com/user-attachments/assets/34e789e2-362d-4b26-af2e-daf0c22cfa91)
+
 
 ### Tech Stack
  - Fontend: React, Javascript, TailwindCSS
